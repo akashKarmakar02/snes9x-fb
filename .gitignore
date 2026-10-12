@@ -503,3 +503,6 @@ MigrationBackup/
 .DS_Store
 *.lock
 profile
+
+# Twilight framebuffer frontend executable.
+/twilight/snes9x

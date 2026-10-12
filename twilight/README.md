@@ -1,7 +1,7 @@
 # Twilight OS framebuffer frontend
 
 This fork contains the Snes9x core and the Twilight `/dev/fb0` frontend in
-`twilight.cpp`. The frontend uses keyboard and mouse input devices directly.
+`twilight.cpp`. The frontend reads keyboard input from `/dev/input/event0` directly.
 Upstream licensing remains in `LICENSE` and the original source headers.
 ROMs and generated executables are not included.
 

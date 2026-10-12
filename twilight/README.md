@@ -21,3 +21,8 @@ is `twilight/snes9x`; run it with a legally obtained SNES ROM.
 Commit and push frontend changes before updating the Twilight OS gitlink.
 The initial submodule integration preserves the frontend from commit
 `44a8fb8d3710c13e80a12d2005abb920be33cc5e` without source changes.
+
+The Twilight branch omits upstream's nested shader, audio-backend, and
+Windows library submodules (SPIRV-Cross, glslang, Vulkan-Headers, cubeb,
+libpng, zlib). The standalone framebuffer Makefile uses none of them;
+recursive OS checkouts only need the Snes9x core and this frontend.
